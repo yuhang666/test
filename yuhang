@@ -1,0 +1,13 @@
+#include<stdio.h> 
+int main()
+ { char m[100],i=1,t;
+ m[0]=getchar();
+ while((m[i]=getchar())!='\n')
+	 i++;
+ for(t=0;t<i;t++) 
+	 if(m[t]>='A'&&m[t]<='W'||m[t]>='a'&&m[t]<='w')
+		 printf("%c",m[t]+3); 
+	 else if(m[t]>='X'&&m[t]<='Z'||m[t]>='x'&&m[t]<='z')
+		 printf("%c",m[t]-23);
+	 else printf("%c",m[t]);
+	 return 0; } 
